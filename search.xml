@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>后台编辑器的用法</title>
+      <link href="/2022/06/22/hello-world/"/>
+      <url>/2022/06/22/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h3 id="号的用法"><a href="#号的用法" class="headerlink" title="#号的用法"></a>#号的用法</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 代表的是一级标题，## 代表的是二级标题， ### 代表的是三级标题</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="超链接的用法"><a href="#超链接的用法" class="headerlink" title="超链接的用法"></a>超链接的用法</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>字符<span class="token punctuation">]</span><span class="token punctuation">(</span>网址<span class="token punctuation">)</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="代码行"><a href="#代码行" class="headerlink" title="代码行"></a>代码行</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ 两段波浪线就行了<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="图片插入规则"><a href="#图片插入规则" class="headerlink" title="图片插入规则"></a>图片插入规则</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token operator">!</span><span class="token punctuation">[</span>你想输入的替代文字<span class="token punctuation">]</span><span class="token punctuation">(</span>/images/图片名.png<span class="token punctuation">)</span>$ 一般保存在source 里面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="/images/pasted-0.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网站建设 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
