@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-05T07:30:11.252Z</updated>
+  <updated>2022-07-12T08:37:24.062Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>哈哈哈成功了</title>
+    <link href="http://example.com/2022/07/12/%E5%93%88%E5%93%88%E5%93%88%E6%88%90%E5%8A%9F%E4%BA%86/"/>
+    <id>http://example.com/2022/07/12/%E5%93%88%E5%93%88%E5%93%88%E6%88%90%E5%8A%9F%E4%BA%86/</id>
+    <published>2022-07-12T08:36:00.000Z</published>
+    <updated>2022-07-12T08:37:24.062Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天老百姓真呀真高兴&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+    <category term="高兴" scheme="http://example.com/tags/%E9%AB%98%E5%85%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>后台编辑器的用法</title>
