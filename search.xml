@@ -4,43 +4,23 @@
   
     
     <entry>
-      <title>博文测试三</title>
+      <title>hexo 部署到 github</title>
       <link href="/2022/07/12/%E5%8D%9A%E6%96%87%E6%B5%8B%E8%AF%95%E4%B8%89/"/>
       <url>/2022/07/12/%E5%8D%9A%E6%96%87%E6%B5%8B%E8%AF%95%E4%B8%89/</url>
       
-        <content type="html"><![CDATA[<p>博文测试三</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Yh网址是luckmanger-github-io"><a href="#Yh网址是luckmanger-github-io" class="headerlink" title="Yh网址是luckmanger.github.io"></a>Yh网址是luckmanger.github.io</h2><hr><p>没有太多的金钱，也就是存粹搭建感兴趣而已，等以后有w了 搞一个个人服务器</p><h2 id="网站搭建是用hexo-github-部署的"><a href="#网站搭建是用hexo-github-部署的" class="headerlink" title="网站搭建是用hexo+github 部署的~~"></a>网站搭建是用hexo+github 部署的~~</h2><h4 id="first"><a href="#first" class="headerlink" title="first"></a>first</h4><pre class="line-numbers language-none"><code class="language-none">github必须有自己的账号，和密码，邮箱地址 ：科学上网还是必须得本地需要下载 ssh git golong node 不需要有的。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="second"><a href="#second" class="headerlink" title="second"></a>second</h4><pre class="line-numbers language-none"><code class="language-none">github中 setting 点击 Your repositories 这一步是建立github远程仓库<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/images/pasted-1.png"></p><pre class="line-numbers language-none"><code class="language-none">1.LuckManger.github.io: 其中new 建立的文件"LuckManger"用户名必须保持一致。并且后面必须添加github.io2.创建过程需要把 readme 打钩 否则会产生一个空仓库出来。3.点击设置，点击page,可以看到一个访问地址，4.现在仓库是空的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="thried"><a href="#thried" class="headerlink" title="thried"></a>thried</h4><pre class="line-numbers language-none"><code class="language-none">1：生成ssh 秘钥放进 github中去$ ssh-keygen -t rsa -C "你的邮箱地址" 生成秘钥2.复制秘钥 放到setting 中 ssh adn gpc keys中去<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><img src="/images/pasted-2.png"></p><h4 id="four"><a href="#four" class="headerlink" title="four"></a>four</h4><pre class="line-numbers language-none"><code class="language-none">1：测试连接$ ssh -T git@github.com 出现sucessful 表示成功连接到2: hexo 本地目录config.vim下面$:deploy:  type: git &nbsp;repository: 仓库的地址在code可以看到 &nbsp;branch: main3：安装自动cli $ npm insatll hexo-deployer-git --save$ hexo g$ hexo d :出现账号填站好出现密码填令牌<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博文测试二</title>
-      <link href="/2022/07/12/%E5%8D%9A%E6%96%87%E6%B5%8B%E8%AF%95%E4%BA%8C/"/>
-      <url>/2022/07/12/%E5%8D%9A%E6%96%87%E6%B5%8B%E8%AF%95%E4%BA%8C/</url>
-      
-        <content type="html"><![CDATA[<p>博文测试二</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>哈哈哈成功了</title>
-      <link href="/2022/07/12/%E5%93%88%E5%93%88%E5%93%88%E6%88%90%E5%8A%9F%E4%BA%86/"/>
-      <url>/2022/07/12/%E5%93%88%E5%93%88%E5%93%88%E6%88%90%E5%8A%9F%E4%BA%86/</url>
-      
-        <content type="html"><![CDATA[<p>今天老百姓真呀真高兴</p>]]></content>
-      
+      <categories>
+          
+          <category> 网站建设 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> 高兴 </tag>
+            <tag> hexo </tag>
             
         </tags>
       
