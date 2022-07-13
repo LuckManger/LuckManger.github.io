@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-13T06:00:01.571Z</updated>
+  <updated>2022-07-13T06:30:57.864Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo 部署到 github</title>
-    <link href="http://example.com/2022/07/12/%E5%8D%9A%E6%96%87%E6%B5%8B%E8%AF%95%E4%B8%89/"/>
-    <id>http://example.com/2022/07/12/%E5%8D%9A%E6%96%87%E6%B5%8B%E8%AF%95%E4%B8%89/</id>
-    <published>2022-07-12T12:24:00.000Z</published>
-    <updated>2022-07-13T06:00:01.571Z</updated>
+    <title>hexo挂载到github</title>
+    <link href="http://example.com/2022/07/13/hexo%E6%8C%82%E8%BD%BD%E5%88%B0github/"/>
+    <id>http://example.com/2022/07/13/hexo%E6%8C%82%E8%BD%BD%E5%88%B0github/</id>
+    <published>2022-07-13T06:30:00.000Z</published>
+    <updated>2022-07-13T06:30:57.864Z</updated>
     
     
       
@@ -43,10 +43,10 @@
   
   <entry>
     <title>后台编辑器的用法</title>
-    <link href="http://example.com/2022/06/22/hello-world/"/>
-    <id>http://example.com/2022/06/22/hello-world/</id>
-    <published>2022-06-22T07:30:00.000Z</published>
-    <updated>2022-07-05T07:30:11.252Z</updated>
+    <link href="http://example.com/2022/06/13/hello-world/"/>
+    <id>http://example.com/2022/06/13/hello-world/</id>
+    <published>2022-06-13T07:30:00.000Z</published>
+    <updated>2022-07-13T06:18:10.682Z</updated>
     
     
       
