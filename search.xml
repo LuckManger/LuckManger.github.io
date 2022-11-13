@@ -4,23 +4,217 @@
   
     
     <entry>
-      <title>hexo挂载到github</title>
-      <link href="/2022/07/13/hexo%E6%8C%82%E8%BD%BD%E5%88%B0github/"/>
-      <url>/2022/07/13/hexo%E6%8C%82%E8%BD%BD%E5%88%B0github/</url>
+      <title>git 挂载 github详细</title>
+      <link href="/2022/11/13/git-%E6%8C%82%E8%BD%BD-github%E8%AF%A6%E7%BB%86/"/>
+      <url>/2022/11/13/git-%E6%8C%82%E8%BD%BD-github%E8%AF%A6%E7%BB%86/</url>
       
-        <content type="html"><![CDATA[<h2 id="Yh网址是luckmanger-github-io"><a href="#Yh网址是luckmanger-github-io" class="headerlink" title="Yh网址是luckmanger.github.io"></a>Yh网址是luckmanger.github.io</h2><hr><p>没有太多的金钱，也就是存粹搭建感兴趣而已，等以后有w了 搞一个个人服务器</p><h2 id="网站搭建是用hexo-github-部署的"><a href="#网站搭建是用hexo-github-部署的" class="headerlink" title="网站搭建是用hexo+github 部署的~~"></a>网站搭建是用hexo+github 部署的~~</h2><h4 id="first"><a href="#first" class="headerlink" title="first"></a>first</h4><pre class="line-numbers language-none"><code class="language-none">github必须有自己的账号，和密码，邮箱地址 ：科学上网还是必须得本地需要下载 ssh git golong node 不需要有的。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="second"><a href="#second" class="headerlink" title="second"></a>second</h4><pre class="line-numbers language-none"><code class="language-none">github中 setting 点击 Your repositories 这一步是建立github远程仓库<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/images/pasted-1.png"></p><pre class="line-numbers language-none"><code class="language-none">1.LuckManger.github.io: 其中new 建立的文件"LuckManger"用户名必须保持一致。并且后面必须添加github.io2.创建过程需要把 readme 打钩 否则会产生一个空仓库出来。3.点击设置，点击page,可以看到一个访问地址，4.现在仓库是空的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="thried"><a href="#thried" class="headerlink" title="thried"></a>thried</h4><pre class="line-numbers language-none"><code class="language-none">1：生成ssh 秘钥放进 github中去$ ssh-keygen -t rsa -C "你的邮箱地址" 生成秘钥2.复制秘钥 放到setting 中 ssh adn gpc keys中去<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><img src="/images/pasted-2.png"></p><h4 id="four"><a href="#four" class="headerlink" title="four"></a>four</h4><pre class="line-numbers language-none"><code class="language-none">1：测试连接$ ssh -T git@github.com 出现sucessful 表示成功连接到2: hexo 本地目录config.vim下面$:deploy:  type: git &nbsp;repository: 仓库的地址在code可以看到 &nbsp;branch: main3：安装自动cli $ npm insatll hexo-deployer-git --save$ hexo g$ hexo d :出现账号填站好出现密码填令牌<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<h3 id="git-挂载到github详细讲解"><a href="#git-挂载到github详细讲解" class="headerlink" title="git 挂载到github详细讲解"></a>git 挂载到github详细讲解</h3><pre class="line-numbers language-none"><code class="language-none">.准备:下载并安装git 注册过的github vpn科学上网工具<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h5 id="建立一个仓库"><a href="#建立一个仓库" class="headerlink" title="建立一个仓库"></a>建立一个仓库</h5><p><img src="/images/github/1.png"></p><h5 id="仓库网址名必须包含-github-io-三级域名"><a href="#仓库网址名必须包含-github-io-三级域名" class="headerlink" title="仓库网址名必须包含 github.io (三级域名)"></a>仓库网址名必须包含 github.io (三级域名)</h5><p><img src="/images/github/2.png"></p><pre class="line-numbers language-none"><code class="language-none">.前期工作已经做好了，readme 打钩 否则出现一个空仓库出来 &nbsp;之前上传时候一直没有上传上去就是这个原因<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="/images/github/3.png"></p><pre class="line-numbers language-none"><code class="language-none">.点击settings页面设置 旁边的Add file 是上传文件 通过 网址访问 仓库 点settings<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/images/github/4.png"></p><pre class="line-numbers language-none"><code class="language-none">这里直接巧命令行了1；在本地blog 页面里面 选择 git bash 输入:ssh-keygen -t rsa -C "邮件地址" /* 绑定邮箱地址88*/2；把本地生成的 .ssh_pub 放入github SSH and GPG keys3；验证邮箱绑定是否成功：ssh -T git@github.com~~![](/images/github/5.png)### 发布内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>E:/blog 根目录下 config.vim<br>加入<br>deploy:<br>type: git<br>repository: 仓库地址<br>branch: main</p><pre class="line-numbers language-none"><code class="language-none">~~~git bash 下面上传 $ npm install hexo-deployer-git --save$ hexo g $ hexo d :出现账号和密码 密码填令牌就行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ftp 服务器 搭建</title>
+      <link href="/2022/08/12/Ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%90%AD%E5%BB%BA/"/>
+      <url>/2022/08/12/Ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<h3 id="First-主机端操作-固定ip"><a href="#First-主机端操作-固定ip" class="headerlink" title="First 主机端操作 固定ip"></a>First 主机端操作 固定ip</h3><pre class="line-numbers language-none"><code class="language-none">话不多说上图Internet Information Services 下的FTP服务器 Web 管理工具 万维网服务全部勾选上 万维网子服务“+”号下的不需要勾选上<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="/images/ftp.png"></p><pre class="line-numbers language-none"><code class="language-none">话不多说上图计算机管理—服务和应用程序，中添加FTP站点<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="/images/ftp2.png"></p><pre class="line-numbers language-none"><code class="language-none">话不多说上图网络点击—右键属性—windows防火墙—允许应用或功能通过windows防火墙—Ftp专用打钩—重启电脑<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="/images/ftp3.png"><br><img src="/images/ftp4.png"></p><h3 id="Second-客户端操作"><a href="#Second-客户端操作" class="headerlink" title="Second 客户端操作"></a>Second 客户端操作</h3><pre class="line-numbers language-none"><code class="language-none">右键建立一个快捷方式—%windir%/explorer.exe ftp://主机ip地址 右键属性更换图标换成ico就行<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
       
       
       <categories>
           
-          <category> 网站建设 </category>
+          <category> 工具 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> ftp </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matery 魔改 three</title>
+      <link href="/2022/08/11/Matery-%E9%AD%94%E6%94%B9-three/"/>
+      <url>/2022/08/11/Matery-%E9%AD%94%E6%94%B9-three/</url>
+      
+        <content type="html"><![CDATA[<h3 id="First"><a href="#First" class="headerlink" title="First"></a>First</h3><pre class="line-numbers language-none"><code class="language-none">加载页面实现1./layout/_partial/目录新建一个loading-pages.ejshttps://blog.csdn.net/kuashijidexibao/article/details/112971657 源文件2.在主题的 layout 目录找到 layout.ejs 文件 添加3.在主题配置文件_config.yml添加开关配置 loadingPages:enabel:true修改滑动条 themes\Matery\source\css\matery.css中 保留这个就行::-webkit-scrollbar {    width: 0px;    height: 0px;} <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h3><pre class="line-numbers language-none"><code class="language-none">自定义局部字体1.博客站点主题目录下的 source 文件夹内创建一个名为 font 的文件夹，即文件夹路径为 /source/font/ ，用来统一存放你要用到的字体。2.将你要用到的字体放入上述创建的文件夹内，字体名称最好为英文，如 /source/font/myFont.ttf3。找到主题文件夹下的 my.css 文件，路径为 /themes/matery/source/css/my.css ，并将下面的代码填入文件中<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p><img src="/images/Materythree.png"><br>右键审查元素找到要定义的文字，添加样式<br><img src="/images/Materythree2.png"></p><h3 id="Three"><a href="#Three" class="headerlink" title="Three"></a>Three</h3><pre class="line-numbers language-none"><code class="language-none">添加后天管理管理界面admin 插件1.npm install --save hexo-admin -y 下载插件2.echo "hexo clean &amp;&amp; hexo g -d"&gt;hexo-deploy.bat 生成hexo-deploy的bat文件3.echo admin:&gt;&gt;"_config.yml" 配置_config.yml文件4.echo "  deployCommand: 'hexo-deploy.bat'"&gt;&gt;"_config.yml" 配置_config.yml文件5,hexo server -d 开启hexo服务<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo-theme-matery </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 魔改 three </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matery 魔改 two</title>
+      <link href="/2022/08/11/Matery-%E9%AD%94%E6%94%B9-two/"/>
+      <url>/2022/08/11/Matery-%E9%AD%94%E6%94%B9-two/</url>
+      
+        <content type="html"><![CDATA[<h3 id="First"><a href="#First" class="headerlink" title="First"></a>First</h3><pre class="line-numbers language-none"><code class="language-none">Matery 添加一个看板娘1.安装插件npm install --save hexo-helper-live2d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">2.插入配置在根目录_config.yml配置文件中添加live2d:  enable: true  scriptFrom: local  pluginRootPath: live2dw/  pluginJsPath: lib/  pluginModelPath: assets/  tagMode: false  log: false  model:    use: live2d-widget-model-shizuku  display:    position: left    width: 180    height: 360    top: -40px    right: 25px  mobile:    show: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="/images/Materytwo.png"></p><h3 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h3><pre class="line-numbers language-none"><code class="language-none">1.epsilon2_12.Gantzert_Felixander3.haru4.miku5.ni-j6.nico7.nietzche8.nipsilon9.haruto10.nito<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo-theme-matery </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 魔改two </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matery 魔改 one</title>
+      <link href="/2022/08/11/Hexo%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/"/>
+      <url>/2022/08/11/Hexo%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</url>
+      
+        <content type="html"><![CDATA[<h3 id="One-plus"><a href="#One-plus" class="headerlink" title="One plus"></a>One plus</h3><pre class="line-numbers language-none"><code class="language-none">1.新建分类 categories2.新建标签 tags3.新建标关于 about4.新建电影 movies5.新建归档 archives<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="/images/Materyone.png"></p><pre class="line-numbers language-none"><code class="language-none">1.代码高亮2.搜索3.字数统计4.添加emoji表情5.添加Rss订阅6.修改社交链接7.修改打赏的二维码8.配置音乐播放器9.修改主题颜色10.修改banner图和文章特色图  Math.floor(Math.random()*7)用到这个函数                   /layout/_partial/bg-cover-content.ejs<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><a href="https://gitee.com/yafine66/hexo-theme-matery">参考官方地址</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo-theme-matery </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 魔改one </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo-theme-matery</title>
+      <link href="/2022/08/11/%E8%BD%BDhexo-theme-matery/"/>
+      <url>/2022/08/11/%E8%BD%BDhexo-theme-matery/</url>
+      
+        <content type="html"><![CDATA[<h3 id="First-安装hexo"><a href="#First-安装hexo" class="headerlink" title="First 安装hexo"></a>First 安装hexo</h3><pre class="line-numbers language-none"><code class="language-none">hexo 官方文档连接地址 https://hexo.io/docs/#Installation1.安装hexo 之前电脑必须下载安装 Git&nbsp;Node.js<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">1.安装完所有要求后，您可以使用 npm 安装 Hexo：$ npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">2.安装 Hexo 后，运行以下命令在目标中初始化 Hexo &lt;folder&gt;。$ hexo init &lt;文件夹&gt; $ cd &lt;文件夹&gt; $ npm install初始化后，您的项目文件夹将如下所示：. ├── _config.yml ├── package.json ├── 脚手架├── 源| ├── _drafts | └── _posts └── 主题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Sencond-安装主题-hexo-theme-matery"><a href="#Sencond-安装主题-hexo-theme-matery" class="headerlink" title="Sencond 安装主题 hexo-theme-matery"></a>Sencond 安装主题 hexo-theme-matery</h3><pre class="line-numbers language-none"><code class="language-none">官方文档地址：https://gitee.com/yafine66/hexo-theme-matery1.cd themes 进入themes文件夹中 blog文件下的主题git clone https://github.com/blinkfox/hexo-theme-matery.git或者 直接下载后解压放入2.修改 Hexo 根目录下的 _config.yml 的 theme 的值：theme: hexo-theme-matery<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo-theme-matery </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo-theme-matery </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Win10 ssh  git node</title>
+      <link href="/2022/08/10/in10-ssh-go-git-node/"/>
+      <url>/2022/08/10/in10-ssh-go-git-node/</url>
+      
+        <content type="html"><![CDATA[<h3 id="First"><a href="#First" class="headerlink" title="First"></a>First</h3><pre class="line-numbers language-none"><code class="language-none">win10 安装 ssh 系统一般是自带的OpenSSH win10 没有自带ssh https://github.com/PowerShell/Win32-OpenSSH/releases 下载地址选择 64位 默认安装就行了如图 要在全局使用 环境变量中，把连接地址放入<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p><img src="/images/ssh.png"></p><h3 id="Sencond"><a href="#Sencond" class="headerlink" title="Sencond"></a>Sencond</h3><pre class="line-numbers language-none"><code class="language-none">win10 安装 git在我的csdn 问题解决文件夹有非常详细安装过程https://git-scm.com/download/win 下载路径如图 要在全局中使用的话 需要在环境变量中加入<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p><img src="/images/git.png"></p><h3 id="Thrid"><a href="#Thrid" class="headerlink" title="Thrid"></a>Thrid</h3><pre class="line-numbers language-none"><code class="language-none">win10 安装 node.js这个直接安装就行了 安装包在E盘nodejs如图 要在全局中使用的话 需要在环境变量中加入 nodejs 环境变量我加了两个<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><img src="/images/node.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> win10 &amp;&amp;ssh &amp;&amp;git&amp;&amp;node </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vscode</title>
+      <link href="/2022/08/10/Vscode/"/>
+      <url>/2022/08/10/Vscode/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vscode-搭建-ssh-总是报错-还有golang一直安装不上"><a href="#vscode-搭建-ssh-总是报错-还有golang一直安装不上" class="headerlink" title="vscode 搭建 ssh 总是报错 还有golang一直安装不上"></a>vscode 搭建 ssh 总是报错 还有golang一直安装不上</h1><h3 id="First-ssh-报错提示"><a href="#First-ssh-报错提示" class="headerlink" title="First ssh 报错提示"></a>First ssh 报错提示</h3><pre class="line-numbers language-none"><code class="language-none">第一种报错vscode 安装插件remote-ssh报错 解决办法就是 开启科学上网，去官方网站下载最新的vscode,在 点击左侧的小齿轮 configure \.ssh\configHost servername #名字随意 &nbsp; &nbsp;HostName #服务器ip地址 &nbsp; &nbsp;User  #服务器用户名一般是 root &nbsp;点击小电脑进行连接，然后就是输入服务器密码就行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>第二种报错<br><img src="/images/vscode.png"></p><pre class="line-numbers language-none"><code class="language-none">kex_exchange_identification: read: Connection reset by peer 报错提示这句话的意思：身份验证出现问题本地端进行操作cmd 打开终端ssh-keygen 生成秘钥 有Y点Y找到 C:\Users\Administrator\.ssh id_rsa 私钥id_rsa.pub 公钥把私钥文件地址放入 C:\Users\Administrator\.ssh config中去如图：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="/images/vscode2.png"></p><pre class="line-numbers language-none"><code class="language-none">服务器端进行操作1.把生成的公钥文件id_rsa.pub 复制文件 放入服务器、/root/.ssh2.复制公钥文件id_rsa.pub 文件内容 放入、root/.ssh authorized.key 没有就自己创建这个文件3.在根目录 /etc/hosts.allow 中添加 sshd:ALL4.重启服务器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Second-golang安装不上"><a href="#Second-golang安装不上" class="headerlink" title="Second golang安装不上"></a>Second golang安装不上</h3><pre class="line-numbers language-none"><code class="language-none">理解错误，golang错误理解是一个vscode 插件golang 应该安装到服务器里面 在服务器进行安装下载tar包wget https://go.dev/dl/go1.17.6.linux-amd64.tar.gztar 包解压/usr/localtar -xvf go1.17.6.linux-amd64.tar.gz 这个是解压命令在 /etc/profileexport GO111MODULE=onexport GOROOT=/usr/local/goexport GOPATH=/home/gopathexport PATH=$PATH:$GOROOT/bin:$GOPATH/bin<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vscode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Finalshell</title>
+      <link href="/2022/08/10/Finalshell/"/>
+      <url>/2022/08/10/Finalshell/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Finalshell"><a href="#Finalshell" class="headerlink" title="Finalshell"></a>Finalshell</h2><h3 id="First"><a href="#First" class="headerlink" title="First"></a>First</h3><pre class="line-numbers language-none"><code class="language-none">之前是用dev、联通的服务器，搭载的是8核8G处理器，Centos系统,Finalshell最大的好处就是免费，Xshell 数据安全但是收费<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h3><pre class="line-numbers language-none"><code class="language-none">搭建网站过程中开发是在windows上，服务器是用的linux,用Finalshell相当于.ssh进行远程连接<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="Thrid-服务器端的操作"><a href="#Thrid-服务器端的操作" class="headerlink" title="Thrid 服务器端的操作"></a>Thrid 服务器端的操作</h3><pre class="line-numbers language-none"><code class="language-none">第一步：重置密码 系统默认root 用户名 &nbsp; &nbsp; &nbsp;设置密码第二步安全组里面，放开相应端口(这个进行访问，这个非常重要)放开端口：80 http提供的访问功能443 用于https提供的访问功能22 SSH端口3389 用于windows远程登录8888 这个是宝塔面板的端口第三步服务器防火墙应用类型可以不填(这个是描述) 协议填TCP 放开 80 22 443 8888<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Four-Finalshell进行操作"><a href="#Four-Finalshell进行操作" class="headerlink" title="Four Finalshell进行操作"></a>Four Finalshell进行操作</h3><pre class="line-numbers language-none"><code class="language-none">这个里面我之前一直连接不上，把智能加速进行打钩就行了<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="宝塔面板"><a href="#宝塔面板" class="headerlink" title="宝塔面板"></a>宝塔面板</h2><h3 id="First-安装"><a href="#First-安装" class="headerlink" title="First 安装"></a>First 安装</h3><p><a href="https://www.bt.cn/">宝塔面板</a><br><img src="/images/bt.png"></p><h3 id="Second-卸载"><a href="#Second-卸载" class="headerlink" title="Second 卸载"></a>Second 卸载</h3><pre class="line-numbers language-none"><code class="language-none">wget http://download.bt.cn/insatll/bu_uninsatll.sh 一键卸载宝塔面板<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">sh bt-uninstall.sh 卸载并且删除数据<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="Thrid-其他"><a href="#Thrid-其他" class="headerlink" title="Thrid 其他"></a>Thrid 其他</h3><pre><code>进入宝塔推荐安装,LANP</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Finalshell </tag>
             
         </tags>
       

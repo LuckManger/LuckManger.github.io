@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-13T06:30:57.864Z</updated>
+  <updated>2022-11-13T06:48:19.808Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,27 +17,225 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo挂载到github</title>
-    <link href="http://example.com/2022/07/13/hexo%E6%8C%82%E8%BD%BD%E5%88%B0github/"/>
-    <id>http://example.com/2022/07/13/hexo%E6%8C%82%E8%BD%BD%E5%88%B0github/</id>
-    <published>2022-07-13T06:30:00.000Z</published>
-    <updated>2022-07-13T06:30:57.864Z</updated>
+    <title>git 挂载 github详细</title>
+    <link href="http://example.com/2022/11/13/git-%E6%8C%82%E8%BD%BD-github%E8%AF%A6%E7%BB%86/"/>
+    <id>http://example.com/2022/11/13/git-%E6%8C%82%E8%BD%BD-github%E8%AF%A6%E7%BB%86/</id>
+    <published>2022-11-13T03:54:00.000Z</published>
+    <updated>2022-11-13T06:48:19.808Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;Yh网址是luckmanger-github-io&quot;&gt;&lt;a href=&quot;#Yh网址是luckmanger-github-io&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;git-挂载到github详细讲解&quot;&gt;&lt;a href=&quot;#git-挂载到github详细讲解&quot; class=&quot;headerlink&quot; title=&quot;git 挂载到github详细讲解&quot;&gt;&lt;/a&gt;git 挂载到github详细讲解&lt;/h3&gt;&lt;pre</summary>
         
       
     
     
     
-    <category term="网站建设" scheme="http://example.com/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    <category term="git" scheme="http://example.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ftp 服务器 搭建</title>
+    <link href="http://example.com/2022/08/12/Ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%90%AD%E5%BB%BA/"/>
+    <id>http://example.com/2022/08/12/Ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%90%AD%E5%BB%BA/</id>
+    <published>2022-08-12T05:53:00.000Z</published>
+    <updated>2022-08-12T06:21:32.387Z</updated>
     
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;First-主机端操作-固定ip&quot;&gt;&lt;a href=&quot;#First-主机端操作-固定ip&quot; class=&quot;headerlink&quot; title=&quot;First 主机端操作 固定ip&quot;&gt;&lt;/a&gt;First 主机端操作 固定ip&lt;/h3&gt;&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="ftp" scheme="http://example.com/tags/ftp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Matery 魔改 three</title>
+    <link href="http://example.com/2022/08/11/Matery-%E9%AD%94%E6%94%B9-three/"/>
+    <id>http://example.com/2022/08/11/Matery-%E9%AD%94%E6%94%B9-three/</id>
+    <published>2022-08-11T02:37:00.000Z</published>
+    <updated>2022-08-11T05:15:15.124Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;First&quot;&gt;&lt;a href=&quot;#First&quot; class=&quot;headerlink&quot; title=&quot;First&quot;&gt;&lt;/a&gt;First&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="hexo-theme-matery" scheme="http://example.com/categories/hexo-theme-matery/"/>
+    
+    
+    <category term="魔改 three" scheme="http://example.com/tags/%E9%AD%94%E6%94%B9-three/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Matery 魔改 two</title>
+    <link href="http://example.com/2022/08/11/Matery-%E9%AD%94%E6%94%B9-two/"/>
+    <id>http://example.com/2022/08/11/Matery-%E9%AD%94%E6%94%B9-two/</id>
+    <published>2022-08-11T01:38:00.000Z</published>
+    <updated>2022-08-11T02:06:18.291Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;First&quot;&gt;&lt;a href=&quot;#First&quot; class=&quot;headerlink&quot; title=&quot;First&quot;&gt;&lt;/a&gt;First&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="hexo-theme-matery" scheme="http://example.com/categories/hexo-theme-matery/"/>
+    
+    
+    <category term="魔改two" scheme="http://example.com/tags/%E9%AD%94%E6%94%B9two/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Matery 魔改 one</title>
+    <link href="http://example.com/2022/08/11/Hexo%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/"/>
+    <id>http://example.com/2022/08/11/Hexo%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</id>
+    <published>2022-08-11T00:50:00.000Z</published>
+    <updated>2022-08-11T01:30:14.812Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;One-plus&quot;&gt;&lt;a href=&quot;#One-plus&quot; class=&quot;headerlink&quot; title=&quot;One plus&quot;&gt;&lt;/a&gt;One plus&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="hexo-theme-matery" scheme="http://example.com/categories/hexo-theme-matery/"/>
+    
+    
+    <category term="魔改one" scheme="http://example.com/tags/%E9%AD%94%E6%94%B9one/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-theme-matery</title>
+    <link href="http://example.com/2022/08/11/%E8%BD%BDhexo-theme-matery/"/>
+    <id>http://example.com/2022/08/11/%E8%BD%BDhexo-theme-matery/</id>
+    <published>2022-08-11T00:12:00.000Z</published>
+    <updated>2022-08-11T00:45:47.099Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;First-安装hexo&quot;&gt;&lt;a href=&quot;#First-安装hexo&quot; class=&quot;headerlink&quot; title=&quot;First 安装hexo&quot;&gt;&lt;/a&gt;First 安装hexo&lt;/h3&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="hexo-theme-matery" scheme="http://example.com/categories/hexo-theme-matery/"/>
+    
+    
+    <category term="hexo-theme-matery" scheme="http://example.com/tags/hexo-theme-matery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10 ssh  git node</title>
+    <link href="http://example.com/2022/08/10/in10-ssh-go-git-node/"/>
+    <id>http://example.com/2022/08/10/in10-ssh-go-git-node/</id>
+    <published>2022-08-10T12:31:00.000Z</published>
+    <updated>2022-08-10T13:05:34.516Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;First&quot;&gt;&lt;a href=&quot;#First&quot; class=&quot;headerlink&quot; title=&quot;First&quot;&gt;&lt;/a&gt;First&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="服务器端" scheme="http://example.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/"/>
+    
+    
+    <category term="win10 &amp;&amp;ssh &amp;&amp;git&amp;&amp;node" scheme="http://example.com/tags/win10-ssh-git-node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vscode</title>
+    <link href="http://example.com/2022/08/10/Vscode/"/>
+    <id>http://example.com/2022/08/10/Vscode/</id>
+    <published>2022-08-10T09:10:00.000Z</published>
+    <updated>2022-08-10T11:37:11.868Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;vscode-搭建-ssh-总是报错-还有golang一直安装不上&quot;&gt;&lt;a href=&quot;#vscode-搭建-ssh-总是报错-还有golang一直安装不上&quot; class=&quot;headerlink&quot; title=&quot;vscode 搭建 ssh 总是报错</summary>
+        
+      
+    
+    
+    
+    <category term="服务器端" scheme="http://example.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/"/>
+    
+    
+    <category term="Vscode" scheme="http://example.com/tags/Vscode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Finalshell</title>
+    <link href="http://example.com/2022/08/10/Finalshell/"/>
+    <id>http://example.com/2022/08/10/Finalshell/</id>
+    <published>2022-08-10T07:02:00.000Z</published>
+    <updated>2022-08-10T09:09:59.096Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Finalshell&quot;&gt;&lt;a href=&quot;#Finalshell&quot; class=&quot;headerlink&quot; title=&quot;Finalshell&quot;&gt;&lt;/a&gt;Finalshell&lt;/h2&gt;&lt;h3 id=&quot;First&quot;&gt;&lt;a href=&quot;#First&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="服务器端" scheme="http://example.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/"/>
+    
+    
+    <category term="Finalshell" scheme="http://example.com/tags/Finalshell/"/>
     
   </entry>
   
